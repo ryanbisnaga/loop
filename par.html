@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="par.css" />
+    <title>Document</title>
+  </head>
+  <body bgcolor="beige">
+    <p id="para">Numeros Pares de 1 a 100</p>
+    <div id="par">
+      <script>
+        let par = "";
+        resul = "";
+        for (cont = 1; cont < 101; cont++) {
+          if (cont % 2 == 0) {
+            par += "</br>" + cont;
+          }
+        }
+        document.getElementById("par").innerHTML += par + "</br>";
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jogo.css" />
+    <title>Document</title>
+  </head>
+  <center><h1>Jogo da Adivinhacao</h1></center>
+  <body bgcolor="#a600a6">
+    <center>
+      <p>Adivinhe o Numero</p>
+      <input
+        id="jog2"
+        type="number"
+        min="1"
+        max="10"
+        autocomplete="off"
+        width="20px"
+        placeholder="Digite o Numero"
+      />
+      <button id="botao" onclick="enviar()">Adivinhe</button>
+
+      <div id="jogo">
+        <script>
+          let cont = 1;
+          let jog1 = Number(prompt("Escolha um Numero de 1 a 10"));
+          function enviar() {
+            let j2 = document.getElementById("jog2").value;
+            if (j2 != jog1) {
+              document.getElementById("jogo").innerHTML =
+                "</br>" + "Voce errou";
+              cont = cont + 1;
+            }
+            if (j2 == jog1) {
+              document.getElementById("jogo").innerHTML =
+                "</br>" +
+                "Voce Acertou em " +
+                cont +
+                " Tentativas,  " +
+                " o Numero Era: " +
+                jog1;
+              botao.disabled = true;
+              jog2.disabled = true;
+            }
+          }
+        </script>
+      </div>
+    </center>
+  </body>
+</html>

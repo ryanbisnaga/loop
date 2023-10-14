@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tabuada.css" />
+  </head>
+  <body bgcolor="#2c2c2c">
+    <center>
+      <input id="n" type="number" placeholder="Digite Um Numero" />
+      <button id="botao" onclick="enviar()">Confirmar</button>
+      <div id="tabuada">
+        <script>
+          function enviar() {
+            let num = document.getElementById("n").value;
+            for (let cont = 1; cont < 11; cont++)
+              document.getElementById("tabuada").innerHTML +=
+                num + "x" + cont + "=" + num * cont + "</br>" + "</br>";
+            botao.disabled = true;
+          }
+        </script>
+      </div>
+    </center>
+  </body>
+</html>

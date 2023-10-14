@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="beige">
+    <input id="digite" type="number" placeholder="Digite um Número">
+    <button id="botao" onclick="enviar()">Confirmar</button>
+<div id="sequencia">
+    <script>
+        function enviar(){
+            let n = document.getElementById("digite").value;
+            for (let cont = 1; cont < 21; cont++)
+            document.getElementById("sequencia").innerHTML+=  n +  " / " + cont + "</br>" + "</table>"
+        }    
+    </script>
+</div>
+</body>
+</html>

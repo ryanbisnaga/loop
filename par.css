@@ -1,0 +1,14 @@
+ #par {
+     color: rgb(163, 132, 223);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ #para {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: large;
+     padding: 10px;
+     background-color: rgb(159, 171, 228);
+     border: 3px outset rgba(155, 198, 221, 0.847);
+     color: rgb(101, 113, 207);
+     margin-right: 700px;
+ }

@@ -1,0 +1,34 @@
+#tabuada {
+    border: 3px outset rgb(21, 255, 216);
+    color: aqua;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+
+#n {
+    color: aqua;
+    border: 4px outset black;
+    background-color: rgba(41, 41, 41, 0.903);
+    box-shadow: 3px 3px rgba(60, 60, 60, 0.967);
+}
+
+#botao {
+    color: aqua;
+    border: 4px outset black;
+    background-color: rgba(41, 41, 41, 0.903);
+    box-shadow: 3px 3px rgba(60, 60, 60, 0.967);
+}
+
+::placeholder {
+    color: aqua;
+}
+
+#tipo {
+    color: aqua;
+
+}
+
+
+#resul {
+    color: red;
+}
